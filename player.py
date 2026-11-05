@@ -4,7 +4,7 @@ from constants import LINE_WIDTH, PLAYER_RADIUS, PLAYER_TURN_SPEED
 
 class Player(CircleShape):
     def __init__(self, x: float, y: float) -> None:
-        super().__init__(x, y, PLAYER_RADIUS, PLAYER_TURN_SPEED)
+        super().__init__(x, y, PLAYER_RADIUS)
         self.rotation = 0.0
         
     def draw(self, screen: pygame.Surface) -> None:
